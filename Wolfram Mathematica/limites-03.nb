@@ -1,0 +1,505 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     19106,        496]
+NotebookOptionsPosition[     18128,        462]
+NotebookOutlinePosition[     18651,        483]
+CellTagsIndexPosition[     18608,        480]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Pr\[AAcute]ctica - L\[IAcute]mites", "Subtitle",
+ CellChangeTimes->{{3.6545436186048203`*^9, 3.654543625599308*^9}}],
+
+Cell[TextData[{
+ "1)\tPara una llamanda telef\[OAcute]nica de larga distancia, un hotel hace \
+un cargo de $ 9.99 para el primer minuto y de $ 0.79 por cada minuto o fracci\
+\[OAcute]n adicional. Una formula para el costo est\[AAcute] dada por ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"C", "(", "x", ")"}], "=", 
+    RowBox[{"9.99", "-", 
+     RowBox[{"0.79", 
+      RowBox[{"\[LeftFloor]", 
+       RowBox[{"-", 
+        RowBox[{"(", 
+         RowBox[{"t", "-", "1"}], ")"}]}], "\[RightFloor]"}]}]}]}], 
+   TraditionalForm]]],
+ "\na) Grafica la funci\[OAcute]n costo en el intervalo [0,6]\nb) Costruye \
+una tabla con un paso de 0.1 en el intervalo [3,4] y observa el \
+comportamiento de la funci\[OAcute]n a medida que t tiende a 3.5\nc) Con base \
+en la gr\[AAcute]fica y en la tabla calcular ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    UnderscriptBox[
+     StyleBox["lim",
+      FontFamily->"Times",
+      FontWeight->"Plain",
+      FontSlant->"Plain"], 
+     RowBox[{"t", "\[RightArrow]", "3.5"}]], 
+    RowBox[{"\[InvisibleApplication]", 
+     RowBox[{"costo", "(", "t", ")"}]}]}], TraditionalForm]]],
+ "\nd) Existe el l\[IAcute]mite de Costo(t) cundo t se aproxima a 3? explicar \
+la respuesta."
+}], "Text",
+ CellChangeTimes->{{3.653041945560355*^9, 3.6530420202855787`*^9}, {
+   3.65304205981536*^9, 3.6530420659719286`*^9}, 3.653042192423688*^9, {
+   3.653043748585396*^9, 3.6530437487572803`*^9}, {3.6543525524010925`*^9, 
+   3.654352661032943*^9}, {3.654352775231997*^9, 3.6543527840451384`*^9}, {
+   3.6543529067759223`*^9, 3.6543529116511736`*^9}, {3.6543531202967544`*^9, 
+   3.6543531537664704`*^9}, {3.6543532565106535`*^9, 
+   3.6543533069188247`*^9}, {3.654353511089669*^9, 3.6543536473284464`*^9}, {
+   3.65435368298042*^9, 3.6543537226135206`*^9}, {3.654542498739571*^9, 
+   3.654542543296107*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Costo", "[", "t_", "]"}], ":=", 
+  RowBox[{"9.99", "-", 
+   RowBox[{"0.79", 
+    RowBox[{"Floor", "[", 
+     RowBox[{"-", 
+      RowBox[{"(", 
+       RowBox[{"t", "-", "1"}], ")"}]}], "]"}]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"Grid", "[", 
+  RowBox[{
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"t", ",", 
+       RowBox[{"Costo", "[", "t", "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", 
+       RowBox[{"-", "3"}], ",", "3"}], "}"}]}], "]"}], ",", " ", 
+   RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"Costo", "[", "t", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", 
+     RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "1"}], ",", "20"}], "}"}]}], "}"}]}]}], 
+  "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{
+  3.653042155082567*^9, {3.6531283105152016`*^9, 3.6531284638537645`*^9}, {
+   3.6531285505257454`*^9, 3.653128683030184*^9}, {3.653128793978457*^9, 
+   3.653128812392734*^9}, {3.653128950217415*^9, 3.653128956330132*^9}, {
+   3.6531290699652443`*^9, 3.6531291142147026`*^9}, {3.653129148003188*^9, 
+   3.6531291727924185`*^9}, {3.6531292428542304`*^9, 3.65312930712576*^9}, {
+   3.6531294321019573`*^9, 3.6531294476183157`*^9}, {3.653129528536003*^9, 
+   3.6531295292704153`*^9}, {3.6531295826000624`*^9, 3.653129587115888*^9}, {
+   3.6531296322906003`*^9, 3.6531296610310507`*^9}, {3.653129699027836*^9, 
+   3.6531297842273808`*^9}, {3.6531298179417205`*^9, 3.653129878030616*^9}, {
+   3.6531311253072557`*^9, 3.6531311277605*^9}, {3.654352794467534*^9, 
+   3.654352892359153*^9}, {3.6543529267942657`*^9, 3.6543530723424764`*^9}, {
+   3.654353135614651*^9, 3.654353140536786*^9}, {3.6543531805334816`*^9, 
+   3.6543532350218544`*^9}, {3.6543533160286665`*^9, 3.654353361672159*^9}, {
+   3.6543534185381284`*^9, 3.654353459206706*^9}}],
+
+Cell[TextData[{
+ "2) a) Grafica la funci\[OAcute]n y estima el l\[IAcute]mite ( si existe) b) \
+\[DownQuestion]Cu\[AAcute]l es el dominio de la funci\[OAcute]n?, Puedes \
+detectar un posible error de la determinaci\[OAcute]n del dominio de la funci\
+\[OAcute]n mediante un mero an\[AAcute]lisis de la gr\[AAcute]fica que genera \
+la herramienta de graficaci\[OAcute]n? \nc) Escribe unas l\[IAcute]neas \
+acerca de la importancia de examinar una funci\[OAcute]n de manera anal\
+\[IAcute]tica adem\[AAcute]s de hacerlo gr\[AAcute]ficamente.\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f1", "(", "x", ")"}], "=", 
+    FractionBox[
+     RowBox[{
+      SqrtBox[
+       RowBox[{"x", "+", "5"}]], "-", "3"}], 
+     RowBox[{"x", "-", "4"}]]}], TraditionalForm]]]
+}], "Text",
+ CellChangeTimes->{{3.653042165270562*^9, 3.6530422273756084`*^9}, {
+  3.6530437528668356`*^9, 3.6530437531012406`*^9}, {3.654353917672993*^9, 
+  3.6543541163740783`*^9}, {3.6543541778020077`*^9, 3.6543542030330863`*^9}, {
+  3.654521605730834*^9, 3.654521605730834*^9}, {3.654542602636487*^9, 
+  3.6545426267221622`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"f1", "[", "x_", "]"}], ":=", 
+   FractionBox[
+    RowBox[{
+     SqrtBox[
+      RowBox[{"x", "+", "5"}]], "-", "3"}], 
+    RowBox[{"x", "-", "4"}]]}]}]], "Input",
+ CellChangeTimes->{{3.6543542058319182`*^9, 3.6543542561543803`*^9}, {
+  3.65452158468412*^9, 3.6545216076059337`*^9}}],
+
+Cell[TextData[{
+ "3) La gr\[AAcute]fica de ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f2", "(", "x", ")"}], "=", 
+    RowBox[{
+     RowBox[{"2", "x"}], "+", "1", "\[AlignmentMarker]"}]}], 
+   TraditionalForm]]],
+ " se muestra en la figura. Encontrar el valor de \[Delta] tal que si ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"0", "<", 
+    RowBox[{"\[LeftBracketingBar]", 
+     RowBox[{"x", "-", "1"}], "\[RightBracketingBar]"}], "<", "\[Delta]"}], 
+   TraditionalForm]]],
+ " , entonces   ",
+ Cell[BoxData[
+  FormBox[
+   TagBox[
+    RowBox[{
+     RowBox[{"\[LeftBracketingBar]", 
+      RowBox[{
+       RowBox[{"f", "(", "x", ")"}], "-", "3"}], "\[RightBracketingBar]"}], 
+     "<", "0.2"}],
+    "MathMLPresentationTag",
+    AutoDelete->True], TraditionalForm]]],
+ " \na) Ejecuta la expresi\[OAcute]n de abajo y en base a tu observaci\
+\[OAcute]n determina el valor de \[Delta]\nb) Cambia en el programa el valor \
+de ",
+ Cell[BoxData[
+  FormBox[
+   TagBox["\[CurlyEpsilon]",
+    "MathMLPresentationTag",
+    AutoDelete->True], TraditionalForm]]],
+ " a 0.1 y determina el valor de \[Delta]\nc) Cambia en el programa el valor \
+de ",
+ Cell[BoxData[
+  FormBox[
+   TagBox["\[CurlyEpsilon]",
+    "MathMLPresentationTag",
+    AutoDelete->True], TraditionalForm]]],
+ " a 0.05 y determina el valor de \[Delta]\nd) Con base en tus observaciones \
+explica como debe ser el valor de \[Delta] para un ",
+ "\[CurlyEpsilon] dado."
+}], "Text",
+ CellChangeTimes->{{3.6531301323357973`*^9, 3.6531301368920107`*^9}, {
+  3.6531302328599796`*^9, 3.6531302937230043`*^9}, {3.654521285185219*^9, 
+  3.6545214083902826`*^9}, {3.654521564146392*^9, 3.6545215776590023`*^9}, {
+  3.654521611481149*^9, 3.6545216121374235`*^9}, {3.6545218031617804`*^9, 
+  3.654521968673208*^9}, {3.654534052629243*^9, 3.6545342922005105`*^9}, {
+  3.6545343325390882`*^9, 3.65453445513128*^9}, {3.654542638160269*^9, 
+  3.6545426394259415`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"f2", "[", "x_", "]"}], ":=", 
+    RowBox[{
+     RowBox[{"2", "x"}], "+", "1"}]}], "\[IndentingNewLine]", 
+   RowBox[{"Manipulate", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Plot", "[", 
+        RowBox[{
+         RowBox[{"f2", "[", "x", "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"x", ",", 
+           RowBox[{"1", "-", "a"}], ",", 
+           RowBox[{"1", "+", "a"}]}], "}"}], ",", 
+         RowBox[{"PlotRange", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "2"}], ",", "5"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "2"}], ",", "6"}], "}"}]}], "}"}]}]}], "]"}], ",", 
+       RowBox[{"Abs", "[", 
+        RowBox[{
+         RowBox[{"f2", "[", 
+          RowBox[{"a", "+", "1"}], "]"}], "-", "3"}], "]"}], ",", 
+       RowBox[{"N", "[", 
+        RowBox[{"Abs", "[", 
+         RowBox[{
+          RowBox[{"f2", "[", 
+           RowBox[{"1", "-", "a"}], "]"}], "-", "3"}], "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"a", ",", "0.0001", ",", "1", ",", "0.0001"}], "}"}]}], "]"}], 
+   "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.6531302982056217`*^9, 3.6531305006584406`*^9}, {
+   3.653130858514665*^9, 3.6531308685872526`*^9}, {3.65313090184392*^9, 
+   3.6531309805475087`*^9}, {3.653131039362697*^9, 3.653131042675352*^9}, 
+   3.6531311004895897`*^9, {3.6531312080663414`*^9, 3.653131212060621*^9}, 
+   3.6531312464711027`*^9, {3.65313142836668*^9, 3.653131474155586*^9}, {
+   3.653131607073532*^9, 3.6531316788982477`*^9}, 3.653131726253479*^9, {
+   3.653131783504876*^9, 3.653131853348381*^9}, {3.65452161996595*^9, 
+   3.6545217202389383`*^9}, {3.654521993064147*^9, 3.6545220122089186`*^9}, {
+   3.6545220506408*^9, 3.654522051390839*^9}, {3.6545220822016582`*^9, 
+   3.654522084436164*^9}, {3.654522150162757*^9, 3.6545221959053736`*^9}, {
+   3.654522226392728*^9, 3.654522295825905*^9}, {3.6545223261155405`*^9, 
+   3.654522382759073*^9}, {3.654522464324976*^9, 3.6545224811143703`*^9}, {
+   3.6545278648554525`*^9, 3.6545279072818336`*^9}, {3.654528027269885*^9, 
+   3.654528054393196*^9}, {3.654528092734408*^9, 3.6545281866639338`*^9}, {
+   3.654528232792638*^9, 3.6545282485689607`*^9}, {3.6545282986241665`*^9, 
+   3.6545284248184357`*^9}, {3.654528466289832*^9, 3.654528520672156*^9}, {
+   3.65452857068388*^9, 3.6545286040424166`*^9}, {3.654528645486575*^9, 
+   3.6545287566984415`*^9}, {3.6545288498753233`*^9, 3.654528901632878*^9}, {
+   3.654528943233444*^9, 3.654528966889109*^9}, {3.6545289982177706`*^9, 
+   3.6545290263687143`*^9}, {3.654529197734784*^9, 3.6545293167553577`*^9}, {
+   3.6545293653190346`*^9, 3.6545294082600775`*^9}, {3.654529590202716*^9, 
+   3.6545296726774697`*^9}, {3.654530048742948*^9, 3.6545301001006308`*^9}, {
+   3.6545301741565895`*^9, 3.6545302930073347`*^9}, {3.6545303567969027`*^9, 
+   3.6545304068730774`*^9}, 3.6545305416467967`*^9, {3.6545305748093204`*^9, 
+   3.6545305804502506`*^9}, {3.6545312010981936`*^9, 3.6545312277500877`*^9}, 
+   3.654531325303158*^9, {3.6545313603636723`*^9, 3.6545314492299285`*^9}, {
+   3.654531590467205*^9, 3.6545316082181077`*^9}, {3.654531650738556*^9, 
+   3.6545316990636873`*^9}, {3.6545317623846693`*^9, 
+   3.6545317939451075`*^9}, {3.65453186271332*^9, 3.6545318634633584`*^9}, {
+   3.6545318961850166`*^9, 3.6545319052646275`*^9}, {3.654532322046026*^9, 
+   3.6545323242180123`*^9}, {3.654532471294031*^9, 3.6545324737726994`*^9}, {
+   3.6545326344527316`*^9, 3.6545326480886517`*^9}, {3.6545326964188023`*^9, 
+   3.654532796427391*^9}, {3.654532858401955*^9, 3.654532860308283*^9}, {
+   3.654532980896085*^9, 3.654532983630604*^9}, {3.6545333539347773`*^9, 
+   3.654533355262971*^9}, {3.6545335878823624`*^9, 3.6545336018148746`*^9}, {
+   3.654533717791297*^9, 3.654533724717223*^9}, {3.654533756472933*^9, 
+   3.6545337725935535`*^9}, {3.654533816258348*^9, 3.654533820573929*^9}, {
+   3.654533952339143*^9, 3.654533957839425*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.654521709941551*^9, 3.6545217101134386`*^9}}],
+
+Cell[TextData[{
+ "Grafica las funciones dadas y las ecuaciones y=|x| y y=-|x| en una misma \
+ventana. Usa las gr\[AAcute]ficas para visualizar el toerema del ancaje. \
+Calcular ",
+ Cell[BoxData[
+  FormBox[
+   TagBox[
+    RowBox[{
+     UnderscriptBox[
+      StyleBox["lim",
+       FontFamily->"Times",
+       FontWeight->"Plain",
+       FontSlant->"Plain"], 
+      RowBox[{"x", "\[RightArrow]", "0"}]], 
+     RowBox[{"\[InvisibleApplication]", 
+      RowBox[{"f", "(", "x", ")"}]}]}],
+    "MathMLPresentationTag",
+    AutoDelete->True], TraditionalForm]]]
+}], "Text",
+ CellChangeTimes->{{3.6531322949952707`*^9, 3.653132309442695*^9}, {
+   3.6545402292373676`*^9, 3.6545403083706617`*^9}, 3.6545403856390753`*^9}],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"f3", "[", "x_", "]"}], ":=", 
+    RowBox[{"x", " ", 
+     RowBox[{"Cos", "[", "x", "]"}]}]}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"f4", "[", "x_", "]"}], ":=", 
+    RowBox[{
+     RowBox[{"Abs", "[", "x", "]"}], 
+     RowBox[{"Sin", "[", "x", "]"}]}]}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"f5", "[", "x_", "]"}], ":=", 
+    RowBox[{"Abs", "[", 
+     RowBox[{"x", " ", 
+      RowBox[{"Sin", "[", "x", "]"}]}], "]"}]}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"f6", "[", "x_", "]"}], ":=", 
+    RowBox[{"x", " ", 
+     RowBox[{"Sin", " ", "[", 
+      FractionBox["1", "x"], "]"}]}]}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"f7", "[", "x_", "]"}], ":=", 
+    RowBox[{
+     RowBox[{"Abs", "[", "x", "]"}], 
+     RowBox[{"Cos", "[", "x", "]"}]}]}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"f8", "[", "x_", "]"}], ":=", 
+    RowBox[{"x", " ", 
+     RowBox[{"Cos", " ", "[", 
+      FractionBox["1", "x"], "]"}]}]}]}]}]], "Input",
+ CellChangeTimes->{{3.6545403909559746`*^9, 3.6545406033949146`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"f3", "[", "x", "]"}], ",", 
+     RowBox[{"Abs", "[", "x", "]"}], ",", 
+     RowBox[{"-", 
+      RowBox[{"Abs", "[", "x", "]"}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{
+      RowBox[{"-", "2"}], " ", "Pi"}], ",", 
+     RowBox[{"2", " ", "Pi"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.654540614848651*^9, 3.6545407065938387`*^9}, {
+  3.654540744146583*^9, 3.6545409733084164`*^9}, {3.654541022731516*^9, 
+  3.65454103021625*^9}}],
+
+Cell[TextData[{
+ "4) Considerar ",
+ Cell[BoxData[
+  RowBox[{
+   RowBox[{"f9", "[", "x_", "]"}], "=", 
+   FractionBox[
+    RowBox[{
+     RowBox[{"Sec", "[", "x", "]"}], "-", "1"}], 
+    SuperscriptBox["x", "2"]]}]],
+  CellChangeTimes->{{3.6545411154436073`*^9, 3.6545411905342035`*^9}}],
+ "\na) Determinar el dominio de f.\nb) Grafica la funci\[OAcute]n de f  \
+\[DownQuestion]Resulta evidente el dominio de f a partir de la \
+gr\[AAcute]fica? Si no es as\[IAcute], explica por qu\[EAcute]?\nc) Utilizar \
+la gr\[AAcute]fica de f para calcular ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    UnderscriptBox[
+     StyleBox["lim",
+      FontFamily->"Times",
+      FontWeight->"Plain",
+      FontSlant->"Plain"], 
+     RowBox[{"x", "\[RightArrow]", "0"}]], 
+    RowBox[{"\[InvisibleApplication]", 
+     RowBox[{"f9", "(", "x", ")"}]}]}], TraditionalForm]]],
+ "\nd) confirmar la respuesta del apartado c) utilizando el m\[EAcute]todo \
+anal\[IAcute]tico."
+}], "Text",
+ CellChangeTimes->{{3.654541260110124*^9, 3.6545414512747746`*^9}, {
+  3.654542416417209*^9, 3.6545424547514105`*^9}, {3.6545426635717993`*^9, 
+  3.6545426645562444`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"f9", "[", "x_", "]"}], ":=", 
+    FractionBox[
+     RowBox[{
+      RowBox[{"Sec", "[", "x", "]"}], "-", "1"}], 
+     SuperscriptBox["x", "2"]]}], "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.6545411154436073`*^9, 3.6545411905342035`*^9}, {
+   3.6545414700354424`*^9, 3.654541490926629*^9}, {3.6545415505819626`*^9, 
+   3.6545416532066803`*^9}, {3.654542386081211*^9, 3.654542388237548*^9}, 
+   3.654542444922785*^9}],
+
+Cell[TextData[{
+ "Grafica las funciones dadas para determinar todos los valores de x en donde \
+la funci\[OAcute]n no es continua. Determina el tipo de discontinuidad.\n\n",
+ Cell[BoxData[
+  FormBox[
+   TagBox[
+    RowBox[{
+     RowBox[{"f", "10", 
+      RowBox[{"(", "x", ")"}]}], "=", 
+     RowBox[{
+      RowBox[{"\[LeftFloor]", "x", "\[RightFloor]"}], "-", "x"}]}],
+    "MathMLPresentationTag",
+    AutoDelete->True], TraditionalForm]]],
+ "\n\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f11", "(", "x", ")"}], "=", 
+    RowBox[{"{", GridBox[{
+       {
+        RowBox[{"\[AlignmentMarker]", 
+         RowBox[{
+          RowBox[{
+           FractionBox[
+            RowBox[{
+             RowBox[{"c", "o", "s", "x"}], "-", "1"}], "x"], 
+           "\[NonBreakingSpace]", "\[NonBreakingSpace]", 
+           "\[NonBreakingSpace]", "\[NonBreakingSpace]", 
+           "\[NonBreakingSpace]", "\[NonBreakingSpace]", 
+           "\[NonBreakingSpace]", "x"}], "<", "0"}]}]},
+       {
+        RowBox[{"\[AlignmentMarker]", 
+         RowBox[{
+          RowBox[{
+          "5", "x", "\[NonBreakingSpace]", "\[NonBreakingSpace]", 
+           "\[NonBreakingSpace]", "\[NonBreakingSpace]", 
+           "\[NonBreakingSpace]", "\[NonBreakingSpace]", 
+           "\[NonBreakingSpace]", "\[NonBreakingSpace]", 
+           "\[NonBreakingSpace]", "\[NonBreakingSpace]", 
+           "\[NonBreakingSpace]", "\[NonBreakingSpace]", 
+           "\[NonBreakingSpace]", "\[NonBreakingSpace]", 
+           "\[NonBreakingSpace]", "x"}], "\[GreaterEqual]", "0"}]}]}
+      }]}]}], TraditionalForm]]],
+ "\n"
+}], "Text",
+ CellChangeTimes->{{3.654543100516876*^9, 3.6545432012061443`*^9}, {
+   3.65454331164345*^9, 3.654543324034712*^9}, {3.6545434984559546`*^9, 
+   3.654543517251395*^9}, 3.654543594303343*^9}]
+}, Open  ]]
+},
+WindowSize->{629, 631},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+PrintingCopies->1,
+PrintingPageRange->{32000, 32000},
+PrintingOptions->{"Magnification"->1.,
+"PaperOrientation"->"Portrait",
+"PaperSize"->{612, 792}},
+Magnification:>1.5 Inherited,
+FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (January 25, 2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 122, 1, 84, "Subtitle"],
+Cell[704, 25, 1830, 41, 383, "Text"],
+Cell[2537, 68, 2139, 50, 191, "Input"],
+Cell[4679, 120, 1099, 22, 311, "Text"],
+Cell[5781, 144, 351, 10, 168, "Input"],
+Cell[6135, 156, 1909, 52, 495, "Text"],
+Cell[8047, 210, 4117, 77, 417, "Input"],
+Cell[12167, 289, 94, 1, 67, "Input"],
+Cell[12264, 292, 712, 20, 196, "Text"],
+Cell[12979, 314, 1125, 32, 415, "Input"],
+Cell[14107, 348, 561, 16, 112, "Input"],
+Cell[14671, 366, 1131, 30, 378, "Text"],
+Cell[15805, 398, 513, 12, 204, "Input"],
+Cell[16321, 412, 1791, 47, 411, "Text"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
